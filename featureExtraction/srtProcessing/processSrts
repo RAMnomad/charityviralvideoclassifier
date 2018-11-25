@@ -1,0 +1,129 @@
+from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.feature_extraction.text import CountVectorizer
+import re
+import boto3
+import csv
+import numpy as np
+
+
+def has_letters(line):
+    if re.search('[a-zA-Z]', line):
+        return True
+    return False
+
+
+def has_no_text(line):
+    l = line.strip()
+    if not len(l):
+        return True
+    if l.isnumeric():
+        return True
+    if l[0] == '(' and l[-1] == ')':
+        return True
+    if not has_letters(line):
+        return True
+    return False
+
+
+def clear_html(line):
+    return re.sub('<[^<]+?>', '', line)
+
+
+def clean(line):
+    if has_no_text(line):
+        return ''
+    else:
+        return clear_html(line) + '\r\n'
+
+def filter_key(key):
+    return key.replace('.srt', '').replace('srt/', '').replace(' ', '-').replace(',', '').replace("'", '').replace('&', '')\
+        .replace('.en', '').replace('transcribed', '').replace('translated', '').replace('.', '')
+
+
+def fetch_and_decode_files():
+    s3 = boto3.resource('s3')
+    bucket = s3.Bucket('charityviralreach')
+    file_encoding = 'utf-8'
+    documents = dict()
+    for obj in bucket.objects.filter(Prefix='srt/'):
+        new_lines = ''
+        for line in obj.get()['Body'].read().splitlines():
+            new_line = clean(line.decode(file_encoding))
+            new_lines + new_line
+
+        documents[filter_key(obj.key)] = new_lines
+    return documents
+
+
+def top_mean_feats(tf, features,  min_tfidf=0.1, top_n=10):
+    # gets the top features of the collection of srts
+    tf_array = tf.toarray()
+    tf_array[tf_array < min_tfidf] = 0
+    tfidf_means = np.mean(tf_array, axis=0)
+    return top_tfidf_feats(tfidf_means, features, top_n)
+
+def top_mean_feat_counts(row, all_features, top_features):
+    new_row = []
+    for feature in top_features:
+        index = all_features.index(feature)
+        new_row.append(row[index])
+
+    return new_row
+
+def top_tfidf_feats(row, features, top_n=1):
+    # gets the features of a single srt returning them as an array
+    top_n_ids = np.argsort(row)[::-1][:top_n]
+    top_feats = [features[i] for i in top_n_ids]
+    return top_feats[:top_n]
+
+def top_tfidf_values(row, top_n=1):
+    top_n_ids = np.argsort(row)[::-1][:top_n]
+    return [row[i] for i in top_n_ids]
+
+
+def main():
+    documents = fetch_and_decode_files()
+    message_vectorizer = CountVectorizer(analyzer='word', binary=False, decode_error='strict', encoding='utf-8',
+                                         input='content', lowercase=True, max_df=1.0, max_features=None, min_df=1,
+                                         ngram_range=(3, 3), preprocessor=None, stop_words=['to', 'and', 'in', 'of'],
+                                         strip_accents=None, token_pattern='(?u)\\b\\w\\w+\\b',
+                                         tokenizer=None, vocabulary=None)
+    mean_vectorizer = CountVectorizer(analyzer='word', binary=False, decode_error='strict', encoding='utf-8',
+                                      input='content', lowercase=True, max_df=1.0, max_features=None, min_df=1,
+                                      ngram_range=(1,1), preprocessor=None, stop_words=['to', 'and', 'in', 'of'],
+                                      strip_accents=None, token_pattern='(?u)\\b\\w\\w+\\b',
+                                      tokenizer=None, vocabulary=None)
+    counts = message_vectorizer.fit_transform(documents)
+    mean_count = mean_vectorizer.fit_transform(documents)
+    transformer = TfidfTransformer(norm='l2', smooth_idf=False, sublinear_tf=False,
+                                   use_idf=True)
+
+    tf = transformer.fit_transform(counts)
+    mean_tf = transformer.fit_transform(mean_count)
+    mean_features = mean_vectorizer.get_feature_names()
+    features = message_vectorizer.get_feature_names()
+    top_mean_features = top_mean_feats(mean_tf, mean_features)
+    header_row = ['file', 'top_document_tfidf_score']
+    header_row.extend(top_mean_features)
+
+    top_feat_array = []
+    for row_id, tf_row in enumerate(tf):
+        row = np.squeeze(tf_row.toarray())
+        top_feat_row = top_tfidf_values(row)
+        top_feat_row.extend(top_mean_feat_counts(np.squeeze(mean_count[row_id].toarray()), mean_features, top_mean_features))
+        top_feat_array.append(top_feat_row)
+    top_feat_dict = dict(zip(documents, top_feat_array))
+    labeled_rows = []
+    for key, values in top_feat_dict.items():
+        row_with_label = [key]
+        row_with_label.extend(values)
+        labeled_rows.append(row_with_label)
+    with open('tfidfOutput.csv', 'w') as outputFile:
+        writer = csv.writer(outputFile, delimiter=',')
+        writer.writerow(header_row)
+        for row in labeled_rows:
+            writer.writerow(row)
+
+
+if __name__ == '__main__':
+    main()
