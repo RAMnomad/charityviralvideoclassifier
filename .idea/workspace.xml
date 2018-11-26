@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d71a1d1-8a46-4473-adc9-809ee346598b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/function.zip" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/function.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloader/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/index.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +27,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="7" value="1" />
+          <entry key="MD" value="1" />
           <entry key="csv" value="14" />
           <entry key="gitignore" value="1" />
           <entry key="processSrts" value="3" />
@@ -33,6 +37,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="38" />
           <entry key="Python" value="15" />
         </counts>
@@ -40,18 +45,20 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Bash" value="20" />
+          <entry key="MD" value="548" />
           <entry key="Python Console" value="98" />
           <entry key="csv" value="31" />
-          <entry key="gitignore" value="4" />
+          <entry key="gitignore" value="10" />
           <entry key="processSrts" value="3907" />
-          <entry key="py" value="8442" />
+          <entry key="py" value="8975" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="20" />
-          <entry key="PLAIN_TEXT" value="35" />
-          <entry key="Python" value="12447" />
+          <entry key="Markdown" value="548" />
+          <entry key="PLAIN_TEXT" value="41" />
+          <entry key="Python" value="12980" />
         </counts>
       </usages-collector>
     </session>
@@ -61,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/testrun.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-480">
-              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+            <state relative-caret-position="390">
+              <caret line="80" column="11" selection-start-line="80" selection-end-line="81" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -99,15 +106,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/labels.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/rekognitionOutput.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -119,21 +117,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/downloader/index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+            <state relative-caret-position="210">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <marker date="1543182839317" expanded="true" signature="334:375" ph="..." />
+                <element signature="e#0#13#0" expanded="true" />
+                <marker date="1543201681381" expanded="true" signature="196:198" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.MD">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="270">
+                <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="4" selection-start-column="4" selection-end-column="4" />
+            <state relative-caret-position="15">
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -203,8 +213,9 @@
         <option value="$PROJECT_DIR$/featureExtraction/srtProcessing/tfidfOutput.csv" />
         <option value="$PROJECT_DIR$/featureExtraction/index.py" />
         <option value="$PROJECT_DIR$/featureExtraction/rekognition/testrun.py" />
-        <option value="$PROJECT_DIR$/downloader/index.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/downloader/index.py" />
+        <option value="$PROJECT_DIR$/README.MD" />
       </list>
     </option>
   </component>
@@ -304,7 +315,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.index">
+  <component name="RunManager" selected="Python.index (1)">
     <configuration name="gathertestoutput (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="charityviralreach" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -318,6 +329,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/featureExtraction/rekognition/gathertestoutput.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="index (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="charityviralreach" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/downloader" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/downloader/index.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -368,27 +400,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="processSrts" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="charityviralreach" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/srtProcessing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/srtProcessing/processSrts" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="testrun (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="charityviralreach" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -411,19 +422,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.processSrts" />
       <item itemvalue="Python.processSrts (1)" />
       <item itemvalue="Python.testrun (1)" />
       <item itemvalue="Python.gathertestoutput (1)" />
       <item itemvalue="Python.index" />
+      <item itemvalue="Python.index (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.index (1)" />
         <item itemvalue="Python.index" />
         <item itemvalue="Python.gathertestoutput (1)" />
         <item itemvalue="Python.processSrts (1)" />
         <item itemvalue="Python.testrun (1)" />
-        <item itemvalue="Python.processSrts" />
       </list>
     </recent_temporary>
   </component>
@@ -617,16 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/testrun.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/results.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -640,21 +641,41 @@
     <entry file="file://$PROJECT_DIR$/downloader/package/pytube/cli.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/downloader/index.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="15">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/testrun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="80" column="11" selection-start-line="80" selection-end-line="81" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1543182839317" expanded="true" signature="334:375" ph="..." />
+            <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/downloader/index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        <state relative-caret-position="210">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1543201681381" expanded="true" signature="196:198" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="270">
+            <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
