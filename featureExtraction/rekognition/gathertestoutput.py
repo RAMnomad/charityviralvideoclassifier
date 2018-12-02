@@ -23,7 +23,7 @@ def one_hot_labels(label_row, collected_labels):
 
 def main():
     rekog = boto3.client('rekognition')
-    results = pandas.read_csv('results.csv', delimiter=',')
+    results = pandas.read_csv('results.csv', delimiter=',', header=None)
     tuples = [tuple(x) for x in results.values]
 
     outputFile = open('rekognitionOutput.csv', 'w')
