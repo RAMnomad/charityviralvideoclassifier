@@ -2,10 +2,668 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d71a1d1-8a46-4473-adc9-809ee346598b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/function.zip" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/function.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloader/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/downloader/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/featureExtraction/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/featureExtraction/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/featureExtraction/rekognition/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/featureExtraction/rekognition/results.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/featureExtraction/srtProcessing/processSrts" beforeDir="false" afterPath="$PROJECT_DIR$/featureExtraction/srtProcessing/processSrts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/featureExtraction/srtProcessing/tfidfOutput.csv" beforeDir="false" afterPath="$PROJECT_DIR$/featureExtraction/srtProcessing/tfidfOutput.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/lambda_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/rekognitionResultsLambda/lambda_function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas-0.23.4.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas-0.23.4.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas-0.23.4.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas-0.23.4.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas-0.23.4.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/algos.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/groupby.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/hashing.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/hashtable.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/index.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/indexing.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/internals.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/interval.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/join.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/json.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/lib.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/missing.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/ops.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/parsers.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/properties.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/reduction.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/reshape.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/skiplist.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/sparse.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/testing.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/tslib.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/tslibs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/tslibs/ccalendar.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/tslibs/conversion.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/tslibs/fields.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/tslibs/frequencies.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/tslibs/nattype.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/tslibs/np_datetime.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/tslibs/offsets.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/tslibs/parsing.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/tslibs/period.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/tslibs/resolution.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/tslibs/strptime.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/tslibs/timedeltas.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/tslibs/timestamps.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/tslibs/timezones.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/window.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_libs/writers.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/_version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/api/extensions/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/api/types/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/compat/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/compat/chainmap.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/compat/chainmap_impl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/compat/numpy/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/compat/numpy/function.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/compat/pickle_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/computation/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/runDataModelLambda/lambda_function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/computation/expressions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tfidfLambda/lambda_function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/accessor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/algorithms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/apply.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/arrays/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/arrays/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/arrays/categorical.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/categorical.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/computation/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/computation/align.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/computation/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/computation/check.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/computation/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/computation/engines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/computation/eval.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/computation/expr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/computation/expressions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/computation/ops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/computation/pytables.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/computation/scope.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/config_init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/datetools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/dtypes/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/dtypes/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/dtypes/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/dtypes/cast.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/dtypes/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/dtypes/concat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/dtypes/dtypes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/dtypes/generic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/dtypes/inference.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/dtypes/missing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/frame.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/generic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/groupby/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/groupby/groupby.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/indexes/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/indexes/accessors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/indexes/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/indexes/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/indexes/category.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/indexes/datetimelike.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/indexes/datetimes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/indexes/frozen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/indexes/interval.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/indexes/multi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/indexes/numeric.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/indexes/period.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/indexes/range.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/indexes/timedeltas.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/indexing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/internals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/missing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/nanops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/ops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/panel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/resample.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/reshape/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/reshape/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/reshape/concat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/reshape/melt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/reshape/merge.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/reshape/pivot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/reshape/reshape.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/reshape/tile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/reshape/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/series.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/sorting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/sparse/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/sparse/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/sparse/array.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/sparse/frame.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/sparse/scipy_sparse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/sparse/series.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/strings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/tools/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/tools/datetimes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/tools/numeric.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/tools/timedeltas.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/util/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/util/hashing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/core/window.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/errors/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/formats/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/formats/style.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/clipboard/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/clipboard/clipboards.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/clipboard/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/clipboard/windows.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/clipboards.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/date_converters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/excel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/feather_format.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/formats/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/formats/console.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/formats/css.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/formats/csvs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/formats/excel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/formats/format.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/formats/html.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/formats/latex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/formats/printing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/formats/style.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/formats/templates/html.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/formats/terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/gbq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/html.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/json/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/json/json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/json/normalize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/json/table_schema.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/msgpack/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/msgpack/_packer.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/msgpack/_unpacker.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/msgpack/_version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/msgpack/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/packers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/parquet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/parsers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/pickle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/pytables.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/s3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/sas/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/sas/_sas.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/sas/sas7bdat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/sas/sas_constants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/sas/sas_xport.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/sas/sasreader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/sql.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/io/stata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/lib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/plotting/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/plotting/_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/plotting/_converter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/plotting/_core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/plotting/_misc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/plotting/_style.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/plotting/_timeseries.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/plotting/_tools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/testing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/api/test_api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/api/test_types.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/categorical/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/categorical/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/categorical/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/categorical/test_algos.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/categorical/test_analytics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/categorical/test_api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/categorical/test_constructors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/categorical/test_dtypes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/categorical/test_indexing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/categorical/test_missing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/categorical/test_operators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/categorical/test_repr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/categorical/test_sorting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/categorical/test_subclass.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/categorical/test_warnings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/computation/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/computation/test_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/computation/test_eval.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/dtypes/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/dtypes/test_cast.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/dtypes/test_common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/dtypes/test_concat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/dtypes/test_dtypes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/dtypes/test_generic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/dtypes/test_inference.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/dtypes/test_missing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/base/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/base/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/base/casting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/base/constructors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/base/dtype.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/base/getitem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/base/groupby.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/base/interface.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/base/methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/base/missing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/base/reshaping.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/base/setitem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/category/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/category/test_categorical.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/decimal/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/decimal/array.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/decimal/test_decimal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/json/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/json/array.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/json/test_json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/test_common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/extension/test_external_block.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_alter_axes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_analytics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_apply.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_arithmetic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_asof.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_axis_select_reindex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_block_internals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_combine_concat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_constructors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_convert_to.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_dtypes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_indexing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_join.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_missing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_mutate_columns.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_nonunique_indexes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_operators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_period.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_quantile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_query_eval.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_rank.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_replace.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_repr_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_reshape.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_sort_values_level_as_str.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_sorting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_subclass.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_timeseries.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_timezones.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_to_csv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/frame/test_validate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/generic/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/generic/test_frame.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/generic/test_generic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/generic/test_label_or_level_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/generic/test_panel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/generic/test_series.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/aggregate/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/aggregate/test_aggregate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/aggregate/test_cython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/aggregate/test_other.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/test_apply.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/test_bin_groupby.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/test_categorical.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/test_counting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/test_filters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/test_function.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/test_groupby.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/test_grouping.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/test_index_as_string.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/test_nth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/test_rank.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/test_timegrouper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/test_transform.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/test_value_counts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/groupby/test_whitelist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/datetimelike.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/datetimes/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/datetimes/test_arithmetic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/datetimes/test_astype.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/datetimes/test_construction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/datetimes/test_date_range.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/datetimes/test_datetime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/datetimes/test_datetimelike.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/datetimes/test_formats.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/datetimes/test_indexing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/datetimes/test_misc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/datetimes/test_missing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/datetimes/test_ops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/datetimes/test_partial_slicing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/datetimes/test_scalar_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/datetimes/test_setops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/datetimes/test_timezones.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/datetimes/test_tools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/interval/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/interval/test_astype.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/interval/test_construction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/interval/test_interval.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/interval/test_interval_new.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/interval/test_interval_range.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/interval/test_interval_tree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/period/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/period/test_arithmetic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/period/test_asfreq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/period/test_astype.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/period/test_construction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/period/test_formats.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/period/test_indexing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/period/test_ops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/period/test_partial_slicing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/period/test_period.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/period/test_period_range.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/period/test_scalar_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/period/test_setops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/period/test_tools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/test_base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/test_category.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/test_frozen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/test_multi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/test_numeric.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/test_range.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/timedeltas/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/timedeltas/test_arithmetic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/timedeltas/test_astype.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/timedeltas/test_construction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/timedeltas/test_formats.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/timedeltas/test_indexing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/timedeltas/test_ops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/timedeltas/test_partial_slicing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/timedeltas/test_scalar_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/timedeltas/test_setops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/timedeltas/test_timedelta.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/timedeltas/test_timedelta_range.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexes/timedeltas/test_tools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/interval/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/interval/test_interval.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/interval/test_interval_new.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/test_callable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/test_categorical.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/test_chaining_and_caching.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/test_coercion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/test_datetime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/test_floats.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/test_iloc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/test_indexing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/test_indexing_slow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/test_ix.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/test_loc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/test_multiindex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/test_panel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/test_partial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/test_scalar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/indexing/test_timedelta.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/internals/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/internals/test_internals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/formats/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/formats/test_css.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/formats/test_eng_formatting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/formats/test_format.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/formats/test_printing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/formats/test_style.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/formats/test_to_csv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/formats/test_to_excel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/formats/test_to_html.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/formats/test_to_latex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/generate_legacy_storage_files.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/json/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/json/test_compression.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/json/test_json_table_schema.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/json/test_normalize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/json/test_pandas.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/json/test_readlines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/json/test_ujson.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/msgpack/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/msgpack/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/msgpack/test_buffer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/msgpack/test_case.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/msgpack/test_except.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/msgpack/test_extension.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/msgpack/test_format.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/msgpack/test_limits.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/msgpack/test_newspec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/msgpack/test_obj.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/msgpack/test_pack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/msgpack/test_read_size.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/msgpack/test_seq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/msgpack/test_sequnpack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/msgpack/test_subtype.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/msgpack/test_unpack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/msgpack/test_unpack_raw.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/c_parser_only.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/comment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/compression.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/converters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/dialect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/dtypes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/header.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/index_col.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/mangle_dupes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/multithread.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/na_values.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/parse_dates.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/python_parser_only.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/quoting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/skiprows.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/test_network.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/test_parsers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/test_read_fwf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/test_textreader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/test_unsupported.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/parser/usecols.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/sas/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/sas/test_sas.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/sas/test_sas7bdat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/sas/test_xport.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/test_clipboard.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/test_common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/test_excel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/test_feather.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/test_gbq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/test_html.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/test_packers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/test_parquet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/test_pickle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/test_pytables.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/test_s3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/test_sql.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/io/test_stata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/plotting/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/plotting/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/plotting/test_boxplot_method.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/plotting/test_converter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/plotting/test_datetimelike.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/plotting/test_deprecated.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/plotting/test_frame.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/plotting/test_groupby.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/plotting/test_hist_method.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/plotting/test_misc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/plotting/test_series.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/reshape/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/reshape/merge/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/reshape/merge/test_join.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/reshape/merge/test_merge.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/reshape/merge/test_merge_asof.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/reshape/merge/test_merge_index_as_string.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/reshape/merge/test_merge_ordered.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/reshape/test_concat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/reshape/test_melt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/reshape/test_pivot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/reshape/test_reshape.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/reshape/test_tile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/reshape/test_union_categoricals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/reshape/test_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/interval/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/interval/test_interval.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/period/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/period/test_asfreq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/period/test_period.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/test_nat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/timedelta/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/timedelta/test_arithmetic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/timedelta/test_construction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/timedelta/test_formats.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/timedelta/test_timedelta.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/timestamp/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/timestamp/test_arithmetic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/timestamp/test_comparisons.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/timestamp/test_rendering.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/timestamp/test_timestamp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/timestamp/test_timezones.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/scalar/timestamp/test_unary_ops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/indexing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/indexing/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/indexing/test_alter_index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/indexing/test_boolean.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/indexing/test_callable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/indexing/test_datetime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/indexing/test_iloc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/indexing/test_indexing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/indexing/test_loc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/indexing/test_numeric.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_alter_axes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_analytics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_apply.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_arithmetic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_asof.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_combine_concat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_constructors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_datetime_values.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_dtypes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_internals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_io.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_missing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_operators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_period.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_quantile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_rank.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_replace.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_repr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_sorting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_subclass.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_timeseries.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_timezones.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/series/test_validate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/frame/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/frame/test_analytics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/frame/test_apply.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/frame/test_frame.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/frame/test_indexing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/frame/test_to_csv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/frame/test_to_from_scipy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/series/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/series/test_indexing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/series/test_series.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/test_arithmetics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/test_array.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/test_combine_concat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/test_format.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/test_groupby.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/test_indexing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/test_libsparse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/test_pivot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/sparse/test_reshape.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_algos.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_downstream.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_errors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_expressions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_join.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_lib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_multilevel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_nanops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_panel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_register_accessor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_resample.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_sorting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_strings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_take.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/test_window.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tools/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tools/test_numeric.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tseries/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tseries/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tseries/offsets/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tseries/offsets/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tseries/offsets/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tseries/offsets/test_fiscal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tseries/offsets/test_offsets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tseries/offsets/test_ticks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tseries/offsets/test_yqm_offsets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tseries/test_frequencies.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tseries/test_holiday.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tslibs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tslibs/test_array_to_datetime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tslibs/test_ccalendar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tslibs/test_conversion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tslibs/test_libfrequencies.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tslibs/test_liboffsets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tslibs/test_parsing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tslibs/test_period_asfreq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/tslibs/test_timezones.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/util/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/util/test_hashing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/util/test_testing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tests/util/test_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tools/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tools/merge.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tools/plotting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tseries/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tseries/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tseries/converter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tseries/frequencies.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tseries/holiday.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tseries/offsets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tseries/plotting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/tslib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/types/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/types/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/types/concat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/util/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/util/_decorators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/util/_depr_module.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/util/_doctools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/util/_move.cpython-37m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/util/_print_versions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/util/_test_decorators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/util/_tester.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/util/_validators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/util/decorators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rekognitionResultsLambda/package/pandas/util/testing.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,66 +675,61 @@
     <session id="-262661556">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="7" value="1" />
-          <entry key="MD" value="1" />
-          <entry key="csv" value="14" />
+          <entry key="MD" value="3" />
+          <entry key="WHEEL" value="1" />
+          <entry key="csv" value="21" />
           <entry key="gitignore" value="1" />
-          <entry key="processSrts" value="3" />
-          <entry key="py" value="11" />
+          <entry key="processSrts" value="4" />
+          <entry key="py" value="24" />
           <entry key="txt" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="38" />
-          <entry key="Python" value="15" />
+          <entry key="Markdown" value="3" />
+          <entry key="PLAIN_TEXT" value="46" />
+          <entry key="Python" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Bash" value="20" />
-          <entry key="MD" value="548" />
+          <entry key="MD" value="7668" />
           <entry key="Python Console" value="98" />
           <entry key="csv" value="31" />
+          <entry key="dummy" value="9" />
           <entry key="gitignore" value="10" />
-          <entry key="processSrts" value="3907" />
-          <entry key="py" value="8975" />
+          <entry key="processSrts" value="4086" />
+          <entry key="py" value="14227" />
+          <entry key="txt" value="99" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="20" />
-          <entry key="Markdown" value="548" />
-          <entry key="PLAIN_TEXT" value="41" />
-          <entry key="Python" value="12980" />
+          <entry key="Markdown" value="7668" />
+          <entry key="PLAIN_TEXT" value="149" />
+          <entry key="Python" value="18411" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/testrun.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="80" column="11" selection-start-line="80" selection-end-line="81" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/results.csv">
           <provider selected="true" editor-type-id="text-editor" />
@@ -92,36 +745,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/gathertestoutput.py">
+        <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/rekognitionOutput.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="88" column="74" selection-start-line="88" selection-start-column="74" selection-end-line="88" selection-end-column="74" />
+            <state relative-caret-position="180">
+              <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/processSrts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="122" column="42" selection-start-line="118" selection-start-column="4" selection-end-line="122" selection-end-column="42" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <marker date="1543179804550" expanded="true" signature="614:683" ph="..." />
-                <marker date="1543179804550" expanded="true" signature="694:699" ph="..." />
+                <element signature="e#0#60#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/rekognitionOutput.csv">
+        <entry file="file://$PROJECT_DIR$/tfidfLambda/lambda_function.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/downloader/index.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="1335">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <marker date="1543201681381" expanded="true" signature="196:198" ph="..." />
+                <element signature="e#0#12#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,54 +781,22 @@
         <entry file="file://$PROJECT_DIR$/README.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="270">
-                <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+              <first_editor relative-caret-position="705">
+                <caret line="52" column="130" selection-start-line="52" selection-start-column="130" selection-end-line="52" selection-end-column="130" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/featureExtraction/index.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-                <marker date="1543181448089" expanded="true" signature="262:658" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/processSrts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="80" column="37" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#60#0" expanded="true" />
-                <marker date="1543178254069" expanded="true" signature="546:589" ph="..." />
-                <marker date="1543178254069" expanded="true" signature="946:948" ph="..." />
-                <marker date="1543178254069" expanded="true" signature="977:2255" ph="..." />
-                <marker date="1543178254069" expanded="true" signature="1874:1895" ph="..." />
-                <marker date="1543178254069" expanded="true" signature="2167:2255" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -189,6 +807,8 @@
       <find>filteredFaces</find>
       <find>topn_ids</find>
       <find>nan</find>
+      <find>record.</find>
+      <find>get_ob</find>
     </findStrings>
     <replaceStrings>
       <replace>filtered_faces</replace>
@@ -206,15 +826,20 @@
         <option value="$PROJECT_DIR$/srtProcessing/processSrts" />
         <option value="$PROJECT_DIR$/rekognition/gathertestoutput.py" />
         <option value="$PROJECT_DIR$/featureExtraction/labels.csv" />
-        <option value="$PROJECT_DIR$/featureExtraction/srtProcessing/processSrts" />
         <option value="$PROJECT_DIR$/featureExtraction/rekognition/results.csv" />
         <option value="$PROJECT_DIR$/featureExtraction/rekognition/rekognitionOutput.csv" />
-        <option value="$PROJECT_DIR$/featureExtraction/rekognition/gathertestoutput.py" />
-        <option value="$PROJECT_DIR$/featureExtraction/srtProcessing/tfidfOutput.csv" />
-        <option value="$PROJECT_DIR$/featureExtraction/index.py" />
         <option value="$PROJECT_DIR$/featureExtraction/rekognition/testrun.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/downloader/index.py" />
+        <option value="$PROJECT_DIR$/rekognitionStartLambda/lambda.py" />
+        <option value="$PROJECT_DIR$/rekognitionStartLambda/lambda_function.py" />
+        <option value="$PROJECT_DIR$/featureExtraction/rekognition/gathertestoutput.py" />
+        <option value="$PROJECT_DIR$/rekognitionResultsLambda/lambda_function.py" />
+        <option value="$PROJECT_DIR$/runDataModelLambda/lambda_function.py" />
+        <option value="$PROJECT_DIR$/featureExtraction/index.py" />
+        <option value="$PROJECT_DIR$/featureExtraction/srtProcessing/tfidfOutput.csv" />
+        <option value="$PROJECT_DIR$/featureExtraction/srtProcessing/processSrts" />
+        <option value="$PROJECT_DIR$/tfidfLambda/lambda_function.py" />
         <option value="$PROJECT_DIR$/README.MD" />
       </list>
     </option>
@@ -246,7 +871,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -257,7 +881,7 @@
             <path>
               <item name="charityviralreach" type="b2602c69:ProjectViewProjectNode" />
               <item name="charityviralreach" type="462c0819:PsiDirectoryNode" />
-              <item name="downloader" type="462c0819:PsiDirectoryNode" />
+              <item name="downloaderLambda" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="charityviralreach" type="b2602c69:ProjectViewProjectNode" />
@@ -276,10 +900,31 @@
               <item name="featureExtraction" type="462c0819:PsiDirectoryNode" />
               <item name="srtProcessing" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="charityviralreach" type="b2602c69:ProjectViewProjectNode" />
+              <item name="charityviralreach" type="462c0819:PsiDirectoryNode" />
+              <item name="rekognitionResultsLambda" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="charityviralreach" type="b2602c69:ProjectViewProjectNode" />
+              <item name="charityviralreach" type="462c0819:PsiDirectoryNode" />
+              <item name="rekognitionStartLambda" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="charityviralreach" type="b2602c69:ProjectViewProjectNode" />
+              <item name="charityviralreach" type="462c0819:PsiDirectoryNode" />
+              <item name="runDataModelLambda" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="charityviralreach" type="b2602c69:ProjectViewProjectNode" />
+              <item name="charityviralreach" type="462c0819:PsiDirectoryNode" />
+              <item name="tfidfLambda" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -296,9 +941,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tfidfLambda/package/sklearn" />
+      <recent name="$PROJECT_DIR$/tfidfLambda/package" />
+      <recent name="$PROJECT_DIR$/venv/lib/python3.7/site-packages" />
       <recent name="$PROJECT_DIR$/downloader/package" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rekognitionResultsLambda" />
+      <recent name="$PROJECT_DIR$/rekognitionStartLambda/package" />
       <recent name="$PROJECT_DIR$/featureExtraction" />
       <recent name="$PROJECT_DIR$/rekognition" />
     </key>
@@ -315,7 +965,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.index (1)">
+  <component name="RunManager" selected="Python.index">
     <configuration name="gathertestoutput (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="charityviralreach" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -430,11 +1080,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.index (1)" />
         <item itemvalue="Python.index" />
-        <item itemvalue="Python.gathertestoutput (1)" />
         <item itemvalue="Python.processSrts (1)" />
         <item itemvalue="Python.testrun (1)" />
+        <item itemvalue="Python.gathertestoutput (1)" />
+        <item itemvalue="Python.index (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -449,6 +1099,21 @@
       <option name="presentableId" value="Default" />
       <updated>1541876141168</updated>
     </task>
+    <task id="LOCAL-00001" summary="Finished uploader, updated readme files">
+      <created>1543202551963</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1543202551963</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Rekognition lambda functions and readme updated.">
+      <created>1543791307031</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1543791307031</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -464,12 +1129,12 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.24947146" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.13742071" />
       <window_info id="Structure" order="1" sideWeight="0.50120485" side_tool="true" weight="0.24947146" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19879518" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -483,12 +1148,12 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.24947146" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.13742071" />
       <window_info id="Structure" order="1" sideWeight="0.50120485" side_tool="true" weight="0.24947146" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19879518" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -505,6 +1170,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finished uploader, updated readme files" />
+    <MESSAGE value="Rekognition lambda functions and readme updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="Rekognition lambda functions and readme updated." />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/bin/pip3.7">
       <provider selected="true" editor-type-id="text-editor" />
@@ -512,33 +1182,13 @@
     <entry file="jar://$PROJECT_DIR$/venv/lib/python3.7/site-packages/setuptools-39.1.0-py3.7.egg!/easy_install.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/srt/HOW FAR I'LL GO - DISNEY'S MOANA - LIVE PERFORMANCE BY 4-YEAR-OLD CLAIRE RYANN AT CHARITY.en.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-203" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/srt/KONY 2012.en.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12623" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/srt/Lilly Singh Supports Girls Education.en.transcribed.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/srt/Rachel Beckwith's Last Wish Brings 37,700 Clean Water.en.transcribed.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/srt/Stephen Colbert &amp; John Oliver Take Over The Stage   Night Of Too Many Stars   HBO.en.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/srt/Heart Beats.en.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/srt/From child, to bride, to mother in Nepal  Radhika's story.en.transcribed.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-268" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/srt/HOW FAR I'LL GO - DISNEY'S MOANA - LIVE PERFORMANCE BY 4-YEAR-OLD CLAIRE RYANN AT CHARITY.en.txt" />
+    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/srt/KONY 2012.en.txt" />
+    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/srt/Lilly Singh Supports Girls Education.en.transcribed.txt" />
+    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/srt/Rachel Beckwith's Last Wish Brings 37,700 Clean Water.en.transcribed.txt" />
+    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/srt/Stephen Colbert &amp; John Oliver Take Over The Stage   Night Of Too Many Stars   HBO.en.txt" />
+    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/srt/Heart Beats.en.txt" />
+    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/srt/From child, to bride, to mother in Nepal  Radhika's story.en.transcribed.txt" />
     <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/faces.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -546,22 +1196,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/srt/Bill Gates ALS Ice Bucket Challenge.en.transcribed.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/srt/Bill Gates ALS Ice Bucket Challenge.en.transcribed.txt" />
+    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/.txt" />
     <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/faceresults.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/lambda_function.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/lambda_function.py" />
     <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/celebrities.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1108">
@@ -576,69 +1216,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/featureExtraction/labels.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="52" selection-start-column="52" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featureExtraction/index.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1543181448089" expanded="true" signature="262:658" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/gathertestoutput.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="88" column="74" selection-start-line="88" selection-start-column="74" selection-end-line="88" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1543179804550" expanded="true" signature="614:683" ph="..." />
-            <marker date="1543179804550" expanded="true" signature="694:699" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/processSrts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="80" column="37" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
-            <marker date="1543178254069" expanded="true" signature="546:589" ph="..." />
-            <marker date="1543178254069" expanded="true" signature="946:948" ph="..." />
-            <marker date="1543178254069" expanded="true" signature="977:2255" ph="..." />
-            <marker date="1543178254069" expanded="true" signature="1874:1895" ph="..." />
-            <marker date="1543178254069" expanded="true" signature="2167:2255" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/tfidfOutput.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/results.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/rekognitionOutput.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/downloader/package/pytube/cli.py">
+    <entry file="file://$PROJECT_DIR$/downloaderLambda/package/pytube/cli.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -648,23 +1226,132 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pandas-0.23.4.dist-info/WHEEL">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/downloaderLambda/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/featureExtraction/labels.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/testrun.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="80" column="11" selection-start-line="80" selection-end-line="81" />
+        <state relative-caret-position="-387">
+          <caret line="21" column="41" selection-start-line="21" selection-end-line="22" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/downloader/index.py">
+    <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/gathertestoutput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="867">
+          <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="89" selection-end-column="37" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1543201681381" expanded="true" signature="196:198" ph="..." />
+            <marker date="1543790282130" expanded="true" signature="614:683" ph="..." />
+            <marker date="1543790282130" expanded="true" signature="694:699" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/results.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rekognitionStartLambda/lambda_function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="29" selection-start-line="18" selection-start-column="26" selection-end-line="19" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+            <marker date="1543702783171" expanded="true" signature="188:315" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/featureExtraction/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="30" column="76" lean-forward="true" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runDataModelLambda/lambda_function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="71" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1544379583206" expanded="true" signature="125:126" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/featureExtraction/rekognition/rekognitionOutput.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rekognitionResultsLambda/lambda_function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/top_mean_features.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/tfidfOutput.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/featureExtraction/srtProcessing/processSrts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="122" column="42" selection-start-line="118" selection-start-column="4" selection-end-line="122" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tfidfLambda/package/sklearn/svm/tests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tfidfLambda/package/numpy/ma/tests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tfidfLambda/package/sklearn/feature_extraction/tests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tfidfLambda/lambda_function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -672,8 +1359,8 @@
     <entry file="file://$PROJECT_DIR$/README.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="270">
-            <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <first_editor relative-caret-position="705">
+            <caret line="52" column="130" selection-start-line="52" selection-start-column="130" selection-end-line="52" selection-end-column="130" />
           </first_editor>
           <second_editor />
         </state>

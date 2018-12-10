@@ -4,7 +4,7 @@ import re
 import boto3
 import csv
 import numpy as np
-
+import pickle
 
 def has_letters(line):
     if re.search('[a-zA-Z]', line):
@@ -85,12 +85,12 @@ def main():
     documents = fetch_and_decode_files()
     message_vectorizer = CountVectorizer(analyzer='word', binary=False, decode_error='strict', encoding='utf-8',
                                          input='content', lowercase=True, max_df=1.0, max_features=None, min_df=1,
-                                         ngram_range=(3, 3), preprocessor=None, stop_words=['to', 'and', 'in', 'of'],
+                                         ngram_range=(3, 3), preprocessor=None, stop_words=['to', 'and', 'in', 'of','is', 'are'],
                                          strip_accents=None, token_pattern='(?u)\\b\\w\\w+\\b',
                                          tokenizer=None, vocabulary=None)
     mean_vectorizer = CountVectorizer(analyzer='word', binary=False, decode_error='strict', encoding='utf-8',
                                       input='content', lowercase=True, max_df=1.0, max_features=None, min_df=1,
-                                      ngram_range=(1,1), preprocessor=None, stop_words=['to', 'and', 'in', 'of'],
+                                      ngram_range=(1,1), preprocessor=None, stop_words=['to', 'and', 'in', 'of','is', 'are'],
                                       strip_accents=None, token_pattern='(?u)\\b\\w\\w+\\b',
                                       tokenizer=None, vocabulary=None)
     counts = message_vectorizer.fit_transform(documents)
@@ -100,11 +100,20 @@ def main():
 
     tf = transformer.fit_transform(counts)
     mean_tf = transformer.fit_transform(mean_count)
+
+    tf_filename = 'tf.sav'
+    tf_file = open(tf_filename, 'wb')
+    pickle.dump(tf.vocabulary_, tf_file)
+    tf_file.close()
+
     mean_features = mean_vectorizer.get_feature_names()
-    features = message_vectorizer.get_feature_names()
     top_mean_features = top_mean_feats(mean_tf, mean_features)
     header_row = ['file', 'top_document_tfidf_score']
     header_row.extend(top_mean_features)
+    with open('top_mean_features.csv', 'w') as featureFile:
+        writer = csv.writer(featureFile, delimiter=',')
+        writer.writerow(header_row)
+    featureFile.close()
 
     top_feat_array = []
     for row_id, tf_row in enumerate(tf):

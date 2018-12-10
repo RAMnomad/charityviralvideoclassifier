@@ -43,13 +43,26 @@ Application flow:
 
 **Lessons and Takeaways and Future Enhancements**
 
-Currently the training dataset is far too small for much of the features extracted to be truly telling.
+My main difficulty is that currently the training dataset is far too small for much of the features extracted to be truly telling.
 The dataset needs to be built up in one way or another. Charity video campaigns are a relatively niche subject,
-so this might be a valid scenario for a transfer learning implementation, since resources are limited. 
+so this might be a valid scenario for a transfer learning implementation, since resources are limited.
+At the moment, this prevents me from doing much in the way of tuning the model. 
 
 Viewer reactions are probably the most useful data we could pull in this scenario, but due to time constraints, 
 I did not make an attempt at this, since it would basically require being able to weed out troll comments and their responses on YouTube,
-or volunteers to label each video with their impressions. 
+or volunteers to label each video with their impressions. At some point in the future I would like to gather this information and attempt to employ and enhance 
+the methods described in this really excellent paper on virality and Hawkes Intensity process. https://arxiv.org/pdf/1602.06033.pdf
+
+I plan on using the most significant features to make suggestions to the user for low scoring videos. 
+
+Unit tests and error handling: You might notice that I don't have any tests or real guard rails set up. It's pretty much 
+the happy path or no path at the moment. English subtitles are required, but I don't have any way to guarantee that the 
+user is submitting a video that meets this requirement. Without it, the whole workflow orchestration fails because the srt file never gets uploaded.
+When it tries to run the model, you'll end up with NAN in your data, which will fail. I could add something to the model 
+to replace NaN values with 0, but it will skew results, so it should really catch that during the initial API call.
+
+I may introduce Cloudformation or terraform templates to enable and streamline set up for other developers if there is a need.
+
 
 **Developer Usage Notes**
 
@@ -58,15 +71,19 @@ If you wish to leverage this code for video classification:
 - Initial feature extraction and training can be done locally using the scripts in /featureExtraction. All videos and subtitle files should be uploaded
 to your S3 bucket prior to running. 
 - Each of the lambda folders contain the necessary packages and are zipped and ready to upload to Lambda.
+- finalized_model.sav is the pickled model to be uploaded to S3 so that the lambda can run the new feature data against it. 
+    If you retrain or make other changes to the model, you will have to re-upload the new pickle
 - At minimum bucket notifications need to be set to:
   
   - trigger the Rekognition Start lambda on receiving a video to the S3 bucket with a particular prefix
   - trigger an SQS message when Rekognition results have been processed
   
- - SQS should be: 
+ - SQS: 
  
-   - Subscribed to the SNS topic Rekognition automatically sends a message to when the called API has completed its process. 
-   - Set up to trigger the Rekognition Results lambda.
+   - Subscribe the first queue to the SNS topic Rekognition automatically sends a message to when the called API has completed its process. 
+   - Set the SQS up to trigger the Rekognition Results lambda.
+   - Have an additional queue set up for long polling to keep track of progress in the UI.
+   - Another topic and queue should be set so that once all data is available it can trigger a lambda to call the model
    
 - The trigger for the downloader is an API Gateway call. 
     - You can set a path as a lambda proxy that passes a link query parameter
